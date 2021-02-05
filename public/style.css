@@ -1,46 +1,31 @@
-/****** Main Styling ******/
-
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #222;
-	background-color: #FaFaFa;
-	text-align: center;
-	line-height: 1.4em;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
 }
 
-.container {
-	padding: 0;
-	margin-top: 40px;
+.container ul {
+  list-style-type: none;
 }
 
-h3 {
-  margin-top: 30px;
+.container ul li {
+  margin: 0.5em;
 }
 
-hr {
-	margin: 25px;
-}
-
-.footer {
-	margin-top: 40px;
-}
-
-code {
-  font-family: monospace;
-  padding: 2px;
-  color: black;
-  background-color: #fff;
-}
-
-ul {
-	list-style-type: none;
-}
-
-li {
-  margin-bottom: 0.5em;
+.container p, .container ul {
+  margin-bottom: 3em;
 }
 
 a {
-	color: #2574A9;
+  text-decoration: none;
+  color: blue;
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  color: red;
+}
+
+footer p a::after {
+  content: attr(href);
 }
